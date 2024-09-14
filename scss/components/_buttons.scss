@@ -1,0 +1,144 @@
+@use "../custom" as *;
+@use "mixins" as *;
+
+.intro-button {
+  position: relative;
+  font-family: "Roboto", system-ui;
+  width: 185px;
+  height: 55px;
+  background-color: $orange;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 55px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.intro-button::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  right: -5px;
+  bottom: -6px;
+  border: 2px solid $orange;
+  border-radius: 10px;
+  z-index: -1;
+  transition: top 0.3s ease, left 0.3s ease, right 0.3s ease, bottom 0.3s ease;
+}
+
+.intro-button:hover {
+  background-color: darkorange;
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(5px, 5px); 
+  background-color: darkorange;
+}
+
+.intro-button:hover::after {
+  top: -6px;
+  left: -5px;
+  right: 5px;
+  bottom: 6px;
+  border-color: darkorange;
+}
+
+.intro-button:active {
+  transform: translate(2px, 2px); 
+  box-shadow: inset 0px 4px 6px rgba(143, 143, 143, 0.2); 
+}
+
+.intro-button:active::after {
+  border-color: darkorange; 
+}
+
+.intro-button2 {
+  position: relative;
+  font-family: "Roboto", system-ui;
+  width: 185px;
+  height: 55px;
+  background-color: $white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+  color: #FAA15B;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 55px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.intro-button2::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  right: -5px;
+  bottom: -6px;
+  border: 2px solid $white;
+  border-radius: 10px;
+  z-index: 9999;
+  transition: top 0.3s ease, left 0.3s ease, right 0.3s ease, bottom 0.3s ease;
+}
+
+.intro-button2:hover {
+  transform: translate(5px, 5px);
+  background-color: $white;
+  color: $orange;
+}
+
+.intro-button2:hover::after {
+  top: -6px;
+  left: -5px;
+  right: 5px;
+  bottom: 6px;
+  border-color: $white;
+}
+
+.intro-button2:active {
+  transform: translate(2px, 2px); 
+  box-shadow: inset 0px 4px 6px rgba(143, 143, 143, 0.2); 
+}
+
+.intro-button2:active::after {
+  border-color: #ffffff; 
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #dadada;
+}
+
+.carousel-indicators .active {
+  background-color: $red;
+}
+
+.experience{
+	.carousel-indicators [data-bs-target] {
+		background-color: $white;
+	  }
+}
+
+@media (min-width: 1200px){
+	.my-community {
+		.carousel-indicators {
+		  bottom: -10px;
+		  right: -160px;
+		}
+	  }
+	.experience {
+		.carousel-indicators {
+		  bottom: -10px;
+		  left: -920px;
+		}
+		
+	  }
+}

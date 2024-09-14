@@ -1,0 +1,9 @@
+
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.experience{
+	.row{
+		background: #F47054;
+	}
+}

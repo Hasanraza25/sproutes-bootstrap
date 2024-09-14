@@ -1,0 +1,99 @@
+@use "../custom" as *;
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+
+  &--intro {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 53px;
+    color: $gray-dark;
+
+    .orange-words {
+      color: $orange;
+    }
+  }
+  &--description {
+    font-family: "Roboto", system-ui;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 15px;
+    color: $gray;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 22.5px;
+    max-width: 450px;
+  }
+
+  svg {
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}
+
+.feature {
+  &--heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: $gray-dark;
+    span {
+      color: $red;
+    }
+  }
+  &--para{
+    font-family: "Roboto", system-ui;
+	font-size: 15px;
+	width: 420px;
+	color: $gray;
+	margin-top: 10px;
+	line-height: 20px;
+	display: inline-block;
+  }
+}
+
+.community-content, .advertiser-content{
+  h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: $white;
+    padding-top: 60px;
+    span{
+      color: $gray-dark;
+    }
+  }
+  p{
+    font-family: "Roboto", system-ui;
+    font-size: 15px;
+    font-weight: 400;
+    color: $white;
+    width: 100%;
+    line-height: 23px;
+  }
+}
+
+.footer{
+  p{
+    font-family: "Roboto", system-ui;
+    font-size: 15px;
+    font-weight: 400;
+    color: $gray;
+    max-width: 687px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    @media(max-width:350px){
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .display-2 {
+    &--intro {
+      font-size: 45px;
+    }
+  }
+}

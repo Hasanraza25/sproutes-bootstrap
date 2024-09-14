@@ -1,0 +1,135 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+.advertiser {
+    background: #FEECDE;
+    padding: 7rem;
+  .row {
+    background-color: #fb8e39;
+    padding-bottom: 0;
+  }
+}
+
+.advertiser-content {
+  input {
+    padding: 1.3rem;
+    font-family: "Roboto", system-ui;
+    font-size: 16px;
+    color: #fbf8f3 !important;
+    border: 1px solid #fbf8f340;
+  }
+  input::placeholder {
+    font-family: "Roboto", system-ui;
+    font-size: 16px;
+    color: #fbf8f3;
+  }
+  input:focus {
+    outline: none !important;
+  }
+  .media-button {
+    padding: 1rem;
+    font-family: "Roboto", system-ui;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 1.8rem;
+    background-color: white;
+    color: #ff7a00;
+    border:  none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .media-button:hover {
+    background-color: #ff7a00;
+    color: white;
+  }
+  
+  .media-button:active {
+    transform: scale(0.97);
+    background-color: #ff5500;
+  }
+
+  .media-button:focus {
+    outline: none; 
+    box-shadow: none; 
+  }
+  
+}
+
+.media-img {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 1920px;
+}
+
+@media (min-width: 1199px) {
+  .media-img img{
+    position: absolute;
+    top: -4.5rem;
+    left: -5rem;
+    width: 600px !important;
+    height: 517px !important;
+  }
+}
+
+@media (min-width: 991px) {
+  .advertiser-content {
+    width: 90%;
+  }
+}
+@media (max-width: 991px) {
+  .media-img {
+    text-align: center;
+  }
+  .advertiser-content {
+    h1 {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+@media(max-width: 800px){
+    .advertiser{
+        padding: 3.5rem 1rem;
+    }
+}
+
+@media(max-width: 1198px) and (min-width: 992px){
+    .media-img{
+        width: 50vw;
+        margin-top: 50%;
+        transform: translateY(-45%);
+        left: -2.5rem;
+    }
+}
+
+@media(max-width: 300px){
+    .advertiser-content{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 14px;
+        }
+      
+    }
+}
+
+@media(max-width: 325px){
+    .advertiser-content{
+        input{
+            font-size: 10px;
+        }
+        input::placeholder{
+            font-size: 14px;
+        }
+        .media-button{
+            font-size: 14px;
+           }
+    }
+}

@@ -1,0 +1,1367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Sproutes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- BEGIN NAVBAR HERE -->
+    <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+            <img src="images/logo.png" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto d-flex text-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Affiliate Marketing</a>
+              </li>
+            </ul>
+            <!-- Search Bar -->
+            <div class="d-flex align-items-center justify-content-center pt-3 pb-3">
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search">
+                <div class="search-icon">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2938 14.5697 18.0025 12.8204 18 11C18 7.133 14.867 4 11 4C7.133 4 4 7.133 4 11C4 14.867 7.133 18 11 18C12.8204 18.0025 14.5697 17.2938 15.875 16.025L16.025 15.875Z" fill="#787878"/>
+                    </svg>
+                    
+                </div>
+              </div>
+              <div class="icon-container ms-3">
+                <div class="icon-box">
+                  <svg width="27" height="27" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0_160_149" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="29">
+                      <rect width="29" height="29" fill="url(#pattern0_160_149)"/>
+                    </mask>
+                    <g mask="url(#mask0_160_149)">
+                      <rect x="-7.58496" y="-8.03076" width="44.6154" height="44.6154" fill="white"/>
+                    </g>
+                    <defs>
+                      <pattern id="pattern0_160_149" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_160_149" transform="scale(0.00195312)"/>
+                      </pattern>
+                      <image id="image0_160_149" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                  </svg>
+                    
+                </div>
+                <div class="icon-box ms-2">
+                  <svg width="29" height="29" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_160_145)">
+                      <path d="M5.66699 29.7499V28.3333C5.66699 23.6388 9.47257 19.8333 14.167 19.8333H19.8337C24.5281 19.8333 28.3337 23.6388 28.3337 28.3333V29.7499" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M17.0007 15.5833C13.871 15.5833 11.334 13.0463 11.334 9.91667C11.334 6.78705 13.871 4.25 17.0007 4.25C20.1302 4.25 22.6673 6.78705 22.6673 9.91667C22.6673 13.0463 20.1302 15.5833 17.0007 15.5833Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_160_145" x="-9.33301" y="-6.75" width="52.6665" height="55.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="7"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_160_145"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_160_145" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>  
+    <!-- END NAVBAR HERE -->
+
+    <!-- BEGIN INTRO-SECTION HERE -->
+    <section id="home" class="intro-section">   
+      <div class="container p-relative">
+        <div class="row text-white align-items-center">
+          <div class="col-lg-6 col-md-12 intros text-start">
+            <h1 class="display-2">
+              <span class="display-2--intro">
+                Discover the Best for Your <span class="orange-words">Little Ones!</span>
+              </span>
+              <div class="quote-icon d-flex mt-3">
+                  <svg class="quote-svg" width="25" height="25" viewBox="0 0 25 25" fill="#b09ca4" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.03159 11.9452V13.881H10.8947V24.3625H0.413086V13.881V11.9452C0.413086 10.9537 0.483907 10.033 0.625551 9.18314C0.767194 8.31754 0.979658 7.51883 1.26294 6.78701C1.54623 6.05518 1.90034 5.39812 2.32527 4.81581C2.7502 4.21776 3.23808 3.69053 3.78891 3.23413C4.56008 2.58886 5.43748 2.10885 6.42111 1.79409C7.40474 1.47933 8.471 1.32195 9.61988 1.32195V6.91685C8.99036 6.91685 8.23493 7.12538 7.3536 7.54244C6.47226 7.9595 6.03159 9.42708 6.03159 11.9452ZM23.3357 6.91685V1.32195C22.171 1.32195 21.1008 1.47933 20.1251 1.79409C19.1493 2.10885 18.2758 2.58886 17.5047 3.23413C16.9381 3.69053 16.4424 4.21776 16.0174 4.81581C15.5925 5.39812 15.2384 6.05518 14.9551 6.78701C14.6718 7.51883 14.4594 8.31754 14.3177 9.18314C14.1761 10.033 14.1052 10.9537 14.1052 11.9452V24.3625H24.5868V13.881H19.7238V11.9452C19.7238 9.42708 20.1684 7.9595 21.0576 7.54244C21.9468 7.12538 22.7061 6.91685 23.3357 6.91685Z" fill="#AE9FA6"/>
+                  </svg>
+          
+                  <span class="display-2--description">
+                    Join a community of parents and parents-to-be. Share tips, find the best products, and earn through affiliate marketing.
+                  </span>
+              </div>
+          </h1>
+            <button class="intro-button">Join Now</button>
+          </div>
+          <div class="col-lg-6 col-12 intros text-end">
+            <div class="intro-image">
+              <img src="images/intro-image.png" alt="Intro Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-12 d-flex">
+            <div class="intro-img-2 text-center mx-auto align-items-center">
+              <img src="images/Layer_1.png" alt="Logo Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        
+       
+      </div>
+      
+    </section>
+    <!-- END INTRO-SECTION HERE -->
+
+    <!-- BEGIN FEATURES HERE -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="row text-center ">
+          <h1 class="feature--heading fw-bold">Our <span>Solution</span> & Features</h1>
+          <p class="feature--para mx-auto">Connect with like-minded individuals to share and support each other’s parenting journey.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+              <div class="feature-card box shadow rounded-5" style="background-color: #fbf8f3;">
+                <img src="images/blogging-feature.png" alt="company 2 image" class="img-fluid">
+                <h3>Social Networking</h3>
+                <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+              <div class="feature-card box shadow rounded-5">
+                <img src="images/platform-feature.png" alt="company 3 image" class="img-fluid">
+                <h3>Blogging and Posts</h3>
+                <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+              <div class="feature-card box shadow rounded-5" style="background-color: #fbf8f3;">
+                <img src="images/social-feature.png" alt="company 1 image" class="img-fluid" style="">
+                <h3 style="max-width: 214px; padding-bottom: 10px;">Promote Product and Earn Through Our Platform</h3>
+                <p style="max-width: 190px;">Write your own blogs to share insights, experiences, and tips with a supportive network.</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+              <div class="feature-card box shadow rounded-5">
+                <img src="images/marketing-feature.png" alt="company 3 image" class="img-fluid">
+                <h3>Affiliate Marketing</h3>
+                <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FEATURES HERE -->
+
+    <!-- BEGIN COMMUNITY HERE -->
+    <section id="community" class="community my-community">
+      <div id="myCarousels-1" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousels-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousels-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousels-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousels-1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#myCarousels-1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#myCarousels-1" data-bs-slide-to="5" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat Slide 2 to Slide 5 with the same content -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END COMMUNITY HERE -->
+
+    <!-- BEGIN EXPERIENCE HERE -->
+    <section id="experience" class="community experience">
+      <div id="myCarousels-2" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="5" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="6" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="7" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-4 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3"><span> Personal</span> Experience</h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END EXPERIENCE HERE -->
+
+    <!-- BEGIN COMMUNITY-2 HERE -->
+    <section id="community" class="community my-community">
+      <div id="myCarousels-3" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousels-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousels-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousels-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousels-3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row rounded-5 pb-5">
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div> 
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3" style="visibility: hidden;">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3 pos-relative">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
+                  </div>
+                  <div class="image-2 pos-absolute">
+                    <img src="images/image 2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END COMMUNITY-2 HERE -->
+
+    <!-- BEGIN ADVERTISER HERE -->
+    <section id="advertiser" class="advertiser community">
+      <div class="container">
+        <div class="row rounded-5 pb-5">
+          <div class="col-12 col-lg-6 ">
+              <div class="media-img position-relative">
+               <img src="images/social-media.png" alt="Social Media" class="img-fluid">
+              </div> 
+          </div>
+          <div class="col-12 col-lg-6 p-3">
+            <div class="advertiser-content">
+              <h1 class="fw-bold text-start pb-3">Get Best <span>Advertiser</span> In Your Side Pocket</h1>
+              <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem.
+              </p>
+                <input type="email" class="form form-control rounded-pill bg-transparent" placeholder="Enter Your Email Address..">
+                <button class="media-button form form-control rounded-pill text-center">Subscribe for more</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ADVERTISER HERE -->
+    
+    <!-- BEGIN FOOTER HERE -->
+    <section id="footer" class="footer">
+      <div class="container">
+        <div class="row text-center mx-auto mb-5">
+          <div class="footer-content">
+            <div class="footer-logo ">
+              <img src="images/logo-2.png" alt="Logo" class="img-fluid">
+            </div>
+            <p class="lh-base">Volutpat turpis distinctio voluptatibus, libero viverra risus quisque dictumst. Voluptatem delectus
+              facilisi, eiusm accusamus euismod ex hac dit</p>
+              <div class="navbar-items">
+                <ul class="d-flex justify-content-center">
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Product Review</a>
+                  </li>
+                  <li>
+                    <a href="#">Affiliate Marketing</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
+          </div>
+        </div>
+        <div class="row footer-bottom">
+          <div class="col-md-6 text-md-start">
+            <div class="copyrights mb-2">
+            Copyright © 2024 <span> Sproutes.</span> All right reserved.
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end policy">
+            <a href="#" class="border-right">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FOOTER HERE -->
+
+
+    <!-- BEGIN BACK-TO-TOP-BUTTON -->
+    <a href="#" class="shadow btn rounded-circle back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- END BACK-TO-TOP-BUTTON -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    
+  </body>
+</html>

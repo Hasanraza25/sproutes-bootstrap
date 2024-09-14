@@ -1,0 +1,109 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+.menu {
+  background-color: $white;
+  z-index: 999999;
+  .navbar-brand {
+    img {
+      max-width: 160px;
+      width: 100%;
+      height: auto;
+      flex-grow: 1; 
+  		transition: all 0.3s ease;
+    }
+  }
+  ul {
+    li {
+      padding: 0;
+      margin-right: 10px;
+      a {
+        font-family: "Roboto", system-ui;
+        color: #787878 !important;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-decoration: none;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+        transition: color 0.3s ease;
+        &:hover{
+					color: $orange !important;
+				}
+      }
+      
+      .active {
+        color: #faa15b !important;
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  @include searchbar;
+
+  .icon-container {
+    display: flex;
+    align-items: end;
+
+    .icon-box {
+      background-color: $orange;
+      width: 38px;
+      height: 38px;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: darkorange; 
+      }
+      i {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .navbar-brand img {
+    width: 100px;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .search-container {
+    max-width: 250px; 
+  }
+}
+
+@media (min-width: 1000px) {
+  .search-container {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-container {
+    max-width: 500px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .menu {
+    ul {
+      li:last-child a {
+        margin-left: -20px;
+      }
+    }
+  }
+}
+
+
+
