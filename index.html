@@ -95,8 +95,11 @@
     <!-- END NAVBAR HERE -->
 
     <!-- BEGIN INTRO-SECTION HERE -->
-    <section id="home" class="intro-section">   
-      <div class="container p-relative">
+    <section id="home" class="intro-section position-relative">
+      <div class="background-wrapper position-absolute w-100 h-100" style="z-index: -1;">
+        <img src="images/intro-shapes.png" alt="Intro Shapes" class="img-fluid">
+      </div>
+      <div class="container">
         <div class="row text-white align-items-center">
           <div class="col-lg-6 col-md-12 intros text-start">
             <h1 class="display-2">
@@ -127,56 +130,70 @@
           </div>
         </div>
         
-       
+      
       </div>
+        
       
     </section>
     <!-- END INTRO-SECTION HERE -->
 
     <!-- BEGIN FEATURES HERE -->
-    <section id="features" class="features">
-      <div class="container">
-        <div class="row text-center ">
+    <section id="features" class="features position-relative">
+      <!-- <div class="background-wrapper position-absolute w-100 h-100" style="z-index: 0;">
+        <img src="images/feature-shapes.png" alt="" class="img-fluid">
+      </div> -->
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="row text-center">
           <h1 class="feature--heading fw-bold">Our <span>Solution</span> & Features</h1>
           <p class="feature--para mx-auto">Connect with like-minded individuals to share and support each other’s parenting journey.</p>
         </div>
       </div>
-
-      <div class="container">
+    
+      <!-- Feature Cards -->
+      <div class="container pos-relative" style="position: relative; z-index: 9999;">
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-              <div class="feature-card box shadow rounded-5" style="background-color: #fbf8f3;">
-                <img src="images/blogging-feature.png" alt="company 2 image" class="img-fluid">
-                <h3>Social Networking</h3>
-                <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
-              </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 position-relative">
+            <div class="vector pos-absolute overflow-hidden" style="right: 11px;">
+              <img src="images/vector-1.png" alt="" class="img-fluid">
             </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-              <div class="feature-card box shadow rounded-5">
-                <img src="images/platform-feature.png" alt="company 3 image" class="img-fluid">
-                <h3>Blogging and Posts</h3>
-                <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
-              </div>
+            <div class="feature-card box shadow rounded-5" style="background-color: #fbf8f3;">
+              <img src="images/blogging-feature.png" alt="company 2 image" class="img-fluid">
+              <h3>Social Networking</h3>
+              <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
             </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-              <div class="feature-card box shadow rounded-5" style="background-color: #fbf8f3;">
-                <img src="images/social-feature.png" alt="company 1 image" class="img-fluid" style="">
-                <h3 style="max-width: 214px; padding-bottom: 10px;">Promote Product and Earn Through Our Platform</h3>
-                <p style="max-width: 190px;">Write your own blogs to share insights, experiences, and tips with a supportive network.</p>
-              </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="feature-card box shadow rounded-5">
+              <img src="images/platform-feature.png" alt="company 3 image" class="img-fluid">
+              <h3>Blogging and Posts</h3>
+              <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-              <div class="feature-card box shadow rounded-5">
-                <img src="images/marketing-feature.png" alt="company 3 image" class="img-fluid">
-                <h3>Affiliate Marketing</h3>
-                <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
-              </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 position-relative">
+            <div class="vector pos-absolute overflow-hidden" style="right: 11px;">
+              <img src="images/vector-1.png" alt="" class="img-fluid">
             </div>
+            <div class="feature-card box shadow rounded-5" style="background-color: #fbf8f3;">
+              <img src="images/social-feature.png" alt="company 1 image" class="img-fluid">
+              <h3 style="max-width: 214px; padding-bottom: 10px;">Promote Product and Earn Through Our Platform</h3>
+              <p style="max-width: 190px;">Write your own blogs to share insights, experiences, and tips with a supportive network.</p>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12" style="z-index: 1 
+          !important">
+            <div class="feature-card box shadow rounded-5" style="z-index: 1;">
+              <img src="images/marketing-feature.png" alt="company 3 image" class="img-fluid">
+              <h3>Affiliate Marketing</h3>
+              <p>Lobortis deserunt saepe similique autem sec maiores dui modi mol.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    
     <!-- END FEATURES HERE -->
 
     <!-- BEGIN COMMUNITY HERE -->
@@ -191,9 +208,12 @@
           <button type="button" data-bs-target="#myCarousels-1" data-bs-slide-to="5" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
-          <!-- Slide 1 -->
+
           <div class="carousel-item active">
-            <div class="container">
+            <div class="container position-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-3 pos-relative">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -204,65 +224,7 @@
                     </div> 
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
-                  <div class="community-content experience-content">
-                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
-                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
-                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
-                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
-                    </p>
-                    <hr class="styled-hr">
-                   <div class="row">
-                    <div class="col-md-6">
-                      <ul>
-                        <div class="d-flex mb-2">
-                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
-                          <li class="lh-base">Impedit rerum, montes atque.</li>
-                        </div>
-                        <div class="d-flex">
-                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
-                          <li class="lh-base">Unde fames mollis rutrum.</li>
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <ul>
-                        <div class="d-flex mb-2">
-                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
-                          <li class="lh-base">Provident rerum, curae.</li>
-                        </div>
-                        <div class="d-flex">
-                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
-                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
-                        </div>
-                      </ul>
-                    </div>
-                   </div>
-                   <hr class="styled-hr mb-5">
-  
-                   <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Repeat Slide 2 to Slide 5 with the same content -->
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
-                  <div class="pt-3 ps-1 w-100 mx-auto">
-                    <div class="relative-img">
-                      <img src="images/image.png" alt="" class="r-img img-fluid">
-                      <img src="images/Background.png" alt="" class="a-img img-fluid">
-                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
-                    </div>  
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
                   <div class="community-content experience-content">
                     <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
                     <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
@@ -299,9 +261,6 @@
                    <hr class="styled-hr mb-5">
   
                    <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -309,7 +268,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -320,7 +282,7 @@
                     </div>  
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="community-content experience-content">
                     <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
                     <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
@@ -357,9 +319,6 @@
                    <hr class="styled-hr mb-5">
   
                    <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -367,7 +326,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -415,9 +377,6 @@
                    <hr class="styled-hr mb-5">
   
                    <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -425,7 +384,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -473,9 +435,6 @@
                    <hr class="styled-hr mb-5">
   
                    <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -483,7 +442,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -494,7 +456,7 @@
                     </div>  
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="community-content experience-content">
                     <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
                     <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
@@ -532,8 +494,63 @@
   
                    <button class="intro-button2">Join Now</button>
                   </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="row rounded-5 pb-4">
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="pt-3 ps-1 w-100 mx-auto">
+                    <div class="relative-img">
+                      <img src="images/image.png" alt="" class="r-img img-fluid">
+                      <img src="images/Background.png" alt="" class="a-img img-fluid">
+                      <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3">
+                  <div class="community-content experience-content">
+                    <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
+                    <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
+                      temporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortor
+                      placerat consequat rutrum, eu convallis, nihil. Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Laciniatemporibus quis autem. Netus erat eros. Eiusmod fuga, conubia tem. Tortorplacerat consequat rutrum, eu convallis, nihil.
+                    </p>
+                    <hr class="styled-hr">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid" style="width: 24px; height: 24px;">
+                          <li class="lh-base">Impedit rerum, montes atque.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Unde fames mollis rutrum.</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <div class="d-flex mb-2">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Provident rerum, curae.</li>
+                        </div>
+                        <div class="d-flex">
+                          <img src="images/tick.png" alt="Tick Image" class="img-fluid">
+                          <li class="lh-base">Volutpat mi litora perspiciatis.</li>
+                        </div>
+                      </ul>
+                    </div>
+                   </div>
+                   <hr class="styled-hr mb-5">
+  
+                   <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
               </div>
@@ -558,9 +575,11 @@
           <button type="button" data-bs-target="#myCarousels-2" data-bs-slide-to="7" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
-          <!-- Slide 1 -->
           <div class="carousel-item active">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -601,16 +620,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -618,7 +634,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -659,16 +678,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -676,7 +692,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -717,16 +736,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -734,7 +750,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -775,16 +794,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -792,7 +808,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -833,16 +852,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -850,7 +866,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -891,16 +910,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -908,7 +924,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -949,16 +968,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -966,7 +982,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-4 pos-relative">
                   <div class="community-content experience-content">
@@ -1007,16 +1026,13 @@
                    <button class="intro-button2">Join Now</button>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
                     <div class="relative-img">
                       <img src="images/image.png" alt="" class="r-img img-fluid">
                       <img src="images/Background.png" alt="" class="a-img img-fluid">
                       <img src="images/cheerful.png" alt="" class="a-img-2 img-fluid">
                     </div> 
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1039,7 +1055,10 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-5">
                 <div class="col-12 col-lg-6 p-3 pos-relative">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -1050,7 +1069,7 @@
                     </div> 
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="community-content experience-content">
                     <h1 class="fw-bold text-start pb-3" style="visibility: hidden;">Social <span>Community</span></h1>
                     <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
@@ -1088,16 +1107,16 @@
   
                    <button class="intro-button2">Join Now</button>
                   </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
-                  </div>
                 </div>
               </div>
             </div>
           </div>
          
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -1108,7 +1127,7 @@
                     </div>  
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="community-content experience-content">
                     <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
                     <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
@@ -1145,9 +1164,6 @@
                    <hr class="styled-hr mb-5">
   
                    <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1155,7 +1171,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -1166,7 +1185,7 @@
                     </div>  
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="community-content experience-content">
                     <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
                     <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
@@ -1203,9 +1222,6 @@
                    <hr class="styled-hr mb-5">
   
                    <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1213,7 +1229,10 @@
           </div>
 
           <div class="carousel-item">
-            <div class="container">
+            <div class="container pos-relative">
+              <div class="image-2 pos-absolute" style="height: 100%;">
+                <img src="images/image 2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
               <div class="row rounded-5 pb-4">
                 <div class="col-12 col-lg-6 p-3">
                   <div class="pt-3 ps-1 w-100 mx-auto">
@@ -1224,7 +1243,7 @@
                     </div>  
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 p-3 pos-relative">
+                <div class="col-12 col-lg-6 p-3">
                   <div class="community-content experience-content">
                     <h1 class="fw-bold text-start pb-3">Social <span>Community</span></h1>
                     <p class="mx-auto">Ridiculus dui varius egestas cras dicta aliquid culpa voluptate! Aut. Lacinia
@@ -1245,7 +1264,7 @@
                         </div>
                       </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6">0
                       <ul>
                         <div class="d-flex mb-2">
                           <img src="images/tick.png" alt="Tick Image" class="img-fluid">
@@ -1261,9 +1280,6 @@
                    <hr class="styled-hr mb-5">
   
                    <button class="intro-button2">Join Now</button>
-                  </div>
-                  <div class="image-2 pos-absolute">
-                    <img src="images/image 2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1276,8 +1292,12 @@
 
     <!-- BEGIN ADVERTISER HERE -->
     <section id="advertiser" class="advertiser community">
-      <div class="container">
+      <div class="container position-relative">
+        <div class="vector pos-absolute overflow-hidden" style="right: 0; bottom: 0; width: 100%; height: 100%;">
+          <img src="images/vector-2.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
         <div class="row rounded-5 pb-5">
+          
           <div class="col-12 col-lg-6 ">
               <div class="media-img position-relative">
                <img src="images/social-media.png" alt="Social Media" class="img-fluid">
@@ -1294,13 +1314,16 @@
             </div>
             </div>
           </div>
-        </div>
+      </div>
       </div>
     </section>
     <!-- END ADVERTISER HERE -->
     
     <!-- BEGIN FOOTER HERE -->
-    <section id="footer" class="footer">
+    <section id="footer" class="footer position-relative">
+      <div class="background-wrapper pos-absolute w-100 h-100" style="z-index: -1;">
+        <img src="images/intro-shapes.png" alt="" class="img-fluid">
+      </div>
       <div class="container">
         <div class="row text-center mx-auto mb-5">
           <div class="footer-content">

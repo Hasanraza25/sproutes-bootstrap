@@ -5,6 +5,7 @@
 
 .community {
     margin-bottom: 5rem;
+	z-index: 1;
 	.row{
 		background: $orange;
 		width: auto;
@@ -68,6 +69,7 @@
     position: absolute;
     top: 0;
     right: 0;
+	z-index: 2;
 }
 
   @media(max-width: 991px) and (min-width: 768px){
@@ -101,13 +103,11 @@
   
   @media (max-width: 575px) and (min-width: 567px) {
 	.a-img {
-		margin-right: -20px;
-	  //   width: 30%; 
+		margin-right: -20px; 
 	  }
 	
 	  .a-img-2 {
 		  margin-right: -25px; 
-		  // width: 25%; 
 	  }
   }
 

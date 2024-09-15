@@ -12033,6 +12033,7 @@ textarea.form-control-lg {
   font-weight: 700;
   color: #fff;
   padding-top: 60px;
+  z-index: 3;
 }
 .community-content h1 span, .advertiser-content h1 span {
   color: #3f4343;
@@ -12182,11 +12183,23 @@ textarea.form-control-lg {
     margin-left: -20px;
   }
 }
+.background-wrapper {
+  margin-top: -2.5rem;
+}
+
+.background-wrapper img {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1 !important; /* Keeps it behind other elements */
+}
+
 .intro-section {
   position: relative;
   padding: 10rem 0 10rem 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .quote-icon svg {
@@ -12256,6 +12269,7 @@ textarea.form-control-lg {
   height: 316.38px;
   max-height: 100%;
   margin-bottom: 30px;
+  z-index: 9999;
 }
 .features .feature-card img {
   padding: 30px 0;
@@ -12282,6 +12296,7 @@ textarea.form-control-lg {
 
 .community {
   margin-bottom: 5rem;
+  z-index: 1;
 }
 .community .row {
   background: #faa15b;
@@ -12341,6 +12356,7 @@ textarea.form-control-lg {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
